@@ -9,6 +9,10 @@
         margin: 0;
         width: 1140px;
       }
+      #flex-container{
+        height: 300px;
+        background-color: lightblue;
+      }
     </style>
     <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous"> -->
     <link rel="stylesheet" href="css/bootstrap/css/bootstrap.min.css" />
@@ -19,8 +23,8 @@
     }
   </style>
   <body> 
-    <section class="container">
-    <nav class="navbar navbar-expand-lg bg-light">         <!--navbar-->
+    <section class="container">                        <!--container-->
+    <nav class="navbar navbar-expand-lg fixed-top navbar-light bg-light">         <!--navbar-->
       <div class="container-fluid">
         <a class="navbar-brand" href="#">Navbar</a>
         <button
@@ -77,8 +81,7 @@
       </div>
     </nav>
     </section>
-
-    <section class="container">                            <!--container-->
+    <section class="container">    
       <h1>Bootstrap's First step. Hello from RCHY.!</h1>
       <script
         src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
@@ -105,15 +108,12 @@
         <img class="img-fluid w-25" src="images/my2.png" alt="" />
         <img class="img-fluid w-25" src="images/my3.png" alt="" />
         <img class="w-25" src="images/my4.png" alt="" />
-        <img
-          class="rounded-circle w-25 img-thumbnail"
-          src="images/image1.jpg"
-          alt=""/>
+        <img class="rounded-circle w-25 img-thumbnail" src="images/image1.jpg" alt=""/>
       </div>
       <!--not working class="rounded"-->
     </section>
-    <h3>Card</h3>
-    <!--Card-->
+    <div class="container">
+      <h3>Card</h3>          <!--Card-->
     <section class="card" style="width: 18rem">
       <img src="images/image2.png" class="card-img-top" alt="..." />
       <div class="card-body">
@@ -125,9 +125,9 @@
         <a href="#" class="btn btn-primary">Go somewhere</a>
       </div>
     </section>
+    </div>
     <div class="Navigation">
-      <h1>Navigation</h1>
-      <!--Navigation-->
+      <h1>Navigation</h1>       <!--Navigation-->
       <nav class="nav">
         <a class="nav-link" href="">Home</a>
         <a class="nav-link" href="">Products</a>
@@ -136,7 +136,7 @@
       </nav>
     </div>
     <div>
-      <div class="container">
+    <div class="container">
         <h1>Grid</h1>
         <div class="row">
           <div class="col-4">
@@ -195,7 +195,12 @@
     </div>
   </div>
   <div class="container">
-    <h1>Flex Layout</h1>
+    <h1>Flex Layout</h1>      <!--https://getbootstrap.com/docs/4.4/utilities/flex/-->
+    <div id="flex-container" class="d-flex align-items-center flex-sm-row flex-column ">
+      <div>Shabana</div>
+      <div>Shabnur</div>
+      <div>Shucorita</div>
+    </div>
   </div>
                       <!--carousel always needs below-->
     <script
